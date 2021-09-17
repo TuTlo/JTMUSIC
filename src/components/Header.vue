@@ -115,6 +115,7 @@ a img{
     width: 100%;
     height:95%;
     background-size: cover;
+    margin:20px;
 }
 .header-container{
     display:flex;

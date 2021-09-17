@@ -1,47 +1,24 @@
 <template>
- <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="row">
-				<div class="col-md-3">
-					<img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="rounded">
-				</div>
-				<div class="col-md-3">
-					<p class="text-center">
-						<strong>Album name</strong><small>album intro</small>
-					</p>
-				</div>
-				<div class="col-md-6">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-3">
+						<img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="rounded" />
+					</div>
+					<div class="col-md-3">
+						<h3>Best Of The First Three</h3>
+						<p class="text-center">
+							Best colletion of my first three year composition journey. 10 pieces, mostly in orchestra, including one Tango, composed from 2017.10-2020.10
+						</p>
+					</div>
+					<div class="col-md-6">
+						<p>player here</p>
+					</div>
 				</div>
 			</div>
-			<nav class="pagination-sm">
-				<ul class="pagination">
-					<li class="page-item">
-						<a class="page-link" href="#">Previous</a>
-					</li>
-					<li class="page-item">
-						<a class="page-link" href="#">1</a>
-					</li>
-					<li class="page-item">
-						<a class="page-link" href="#">2</a>
-					</li>
-					<li class="page-item">
-						<a class="page-link" href="#">3</a>
-					</li>
-					<li class="page-item">
-						<a class="page-link" href="#">4</a>
-					</li>
-					<li class="page-item">
-						<a class="page-link" href="#">5</a>
-					</li>
-					<li class="page-item">
-						<a class="page-link" href="#">Next</a>
-					</li>
-				</ul>
-			</nav>
 		</div>
 	</div>
-</div>
 </template>
 
 <script>
@@ -57,5 +34,18 @@ export default {
 	background: lightgreen;
 	height: 600px;
 	width: 100%;
+}
+div{
+	margin:auto;
+}
+.container-fluid{
+	position: relative;
+	padding:10px;
+}
+.row{
+	padding:10px;
+}
+.col-md-3{
+	padding:10px;
 }
 </style>

@@ -3,6 +3,7 @@
     <pageheader></pageheader>
     <router-view></router-view>
     <page></page>
+    <player />
     <footer></footer>
   </div>
 </template>
@@ -15,15 +16,21 @@ import Song from './components/Song.vue'
 import Other from './components/Other.vue'
 import Footer from './components/Footer.vue'
 
+import Player from './components/Player.vue'
+
 export default {
   name: 'App',
   components:{
     "pageheader":Header,
+    'player':Player,
     'home':Home,
     'music':Music,
     'song':Song,
     'other':Other,
-    'footer':Footer
+    'footer':Footer,
+  },
+  data() {
+    return {}
   }
 }
 </script>

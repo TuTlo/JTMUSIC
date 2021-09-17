@@ -51,7 +51,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<p class="text-center lead">
-						工作室简介+个人简介 
+						DAWN QI, Composer, Music Producer.
 					</p>
 					<p class="text-center lead">
 						something abcd mstart some year
@@ -60,9 +60,12 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<p class="text-center lead">
-						contact email:
-					</p>
+					<address>
+						<strong>Dawn</strong>
+						<p>
+						<a href="mailto:#">jtproduction@foxmail.com</a>
+						</p>
+					</address>
 				</div>
 			</div>
 		</div>
@@ -88,5 +91,14 @@ export default {
 	background: pink;
 	height: 600px;
 	width: 100%;
+}
+.carousel slide{
+	display:flex;
+	margin:10px;
+	padding:10px;
+}
+.col-md-12{
+	padding:10px;
+	margin:auto;
 }
 </style>
