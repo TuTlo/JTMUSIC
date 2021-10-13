@@ -3,6 +3,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="row">
+					<!-- Album -->
 					<div class="col-md-3">
 						<img alt="Bootstrap Image Preview" src="../assets/AlbumIcon/redanmacy.png" class="rounded" />
 						<p>image here</p>
@@ -14,8 +15,20 @@
 						</p>
 					</div>
 					<div class="col-md-6">
-						<p>player here</p>
+						<ol class="tracklist">
+							<li class="tracklistitem">
+								<div class="trackbutton">
+									<div class="track-index">
+										<div class="track-index-num"></div>
+									</div>
+									<div class="track-name">Take my hand</div>
+									<div class="track-duration"></div>
+								</div>
+							</li>
+						</ol>
 					</div>
+					<!-- END here -->
+					<!-- Album -->
 					<div class="col-md-3">
 						<img alt="Bootstrap Image Preview" src="../assets/AlbumIcon/bestCover.jpg" class="rounded" />
 						<p>image here</p>
@@ -29,6 +42,7 @@
 					<div class="col-md-6">
 						<p>player here</p>
 					</div>
+					<!-- END here -->
 				</div>
 			</div>
 		</div>

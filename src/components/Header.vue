@@ -24,22 +24,22 @@
                     <nav class="header-sns-nav">
                         <ul class="header-sns-icon">
                             <li class="header-sns-item">
-                                <a href="" class="header-sns-nav_link" target="_blank">
+                                <a href='https://c.y.qq.com/base/fcgi-bin/u?__=3JrTYXl' class="header-sns-nav_link" target="_blank">
                                     <img src="../assets/icon/QQmusic.svg" alt class="sp-hide" />
                                 </a>
                             </li>
                             <li class="header-sns-item">
-                                <a href="" class="header-sns-nav_link" target="_blank">
+                                <a href='https://music.163.com/#/artist?id=32711945' class="header-sns-nav_link" target="_blank">
                                     <img src="../assets/icon/icon_netease.svg" alt class="sp-hide" />
                                 </a>
                             </li>
                             <li class="header-sns-item">
-                                <a href="" class="header-sns-nav_link" target="_blank">
+                                <a href='https://space.bilibili.com/20343687' class="header-sns-nav_link" target="_blank">
                                     <img src="../assets/icon/icon_bilibili.svg" alt class="sp-hide" />
                                 </a>
                             </li>
                             <li class="header-sns-item">
-                                <a href="" class="header-sns-nav_link" target="_blank">
+                                <a href='https://weibo.com/u/6221482101' class="header-sns-nav_link" target="_blank">
                                     <img src="../assets/icon/weibo.svg" alt class="sp-hide" />
                                 </a>
                             </li> 
@@ -54,6 +54,12 @@
 <script>
 export default {
     name: 'pageheader',
+    data:{
+        weibo:'https://weibo.com/u/6221482101',
+        bilibili:'https://space.bilibili.com/20343687',
+        netease:'https://music.163.com/#/artist?id=32711945',
+        qmusic:'https://y.tencentmusic.com/#/user/musician/index',
+    },
     methods: {
 		jump(link) {// open in new window & open APP?
 			window.location.href=link

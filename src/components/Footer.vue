@@ -1,27 +1,28 @@
 <template>
-    <div id="footer">
-        <p>contact email</p>
-        <div id="otherLink">
-        	<span class="el-icon-ttwangyiyunyinle" @click="jump('https://music.163.com/#/artist?id=32711945')"></span>
-	        <span class="el-icon-ttweibo" @click="jump('https://weibo.com/u/6221482101')"></span>
-	        <span class="el-icon-tticon_bilibili" @click="jump('https://space.bilibili.com/20343687')"></span>
-	        <span class="el-icon-ttpinpaibiaoshi_QQyinle" @click="jump('https://c.y.qq.com/base/fcgi-bin/u?__=3JrTYXl')"></span>
+    <footer class="footer">
+        <div id="footer-container">
+			<p class="footer-text">
+				DAWNIN QI OFFICIAL WEB SITE 
+			</p>
+			<div class="footer-copyright">
+				<small class="footer-copyright-txt">©️ 2021 DAWNIN QI Official Web Site </small>
+			</div>
         </div>
-    </div>
+    </footer>
 
 </template>
 
 <script>
 export default{
-    name:"footer",
-    methods: {
-		jump(link) {// open in new window & open APP?
-			window.location.href=link
-		}
-	}
+    name:"pagefooter",
 }
 </script>
 
 <style>
-
+.footer {
+	position: flex;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+}
 </style>
