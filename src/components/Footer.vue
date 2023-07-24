@@ -2,10 +2,10 @@
     <footer class="footer">
         <div id="footer-container">
 			<p class="footer-text">
-				DAWNIN QI OFFICIAL WEB SITE 
+				Forty Two Music OFFICIAL WEB SITE 
 			</p>
 			<div class="footer-copyright">
-				<small class="footer-copyright-txt">©️ 2021 DAWNIN QI Official Web Site </small>
+				<small class="footer-copyright-txt">©️ 2021 Forty Two Music Official Web Site </small>
 			</div>
         </div>
     </footer>

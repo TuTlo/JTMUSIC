@@ -1,21 +1,31 @@
 <template>
-    <div class="wholeplayer">
+    <div class="di main-wrap" v-loading="audio.waiting">
         <div>
-            <audio ref="audio"
+            <audio ref="audio" class="dn"
+            :src="url" :preload="audio.preload"
             @pause="onPause"
             @play="onPlay"
+            @waiting="onWaiting"
             @timeupdate="onTimeupdate"
             @loadedmetadata="onLoadmetadata"
-            src='http://devtest.qiniudn.com/secret base~.mp3' controls="controls"></audio>
+            controls="controls">
+            </audio>
         </div>
-        <div class="playerButton">
+        <!-- controller play/pause -->
+        <div>
             <el-button type="text" @click="startPlayOrPause">{{audio.playing | transPlayPause}}</el-button>
+            <el-button v-show="!controlList.noSpeed" type="text" @click="changeSpeed">{{audio.speed | transSpeed}}</el-button>
 
             <el-tag type="info">{{ audio.currentTime | formatSecond}}</el-tag>
 
+            <el-slider v-show="!controlList.noProcess" v-model="sliderTime" :format-tooltip="formatProcessToolTip" @change="changeCurrentTime" class="slider"></el-slider>
+
             <el-tag type="info"> {{ audio.maxTime | formatSecond}}</el-tag>
 
-            <el-slider v-model="sliderTime" : format-tooltip="formatProcessToolTip" @change="changeCurrentTime" class="slider"></el-slider>
+            <el-button v-show="!controlList.noMuted" type="text" @click="startMutedOrNot">{{audio.muted | transMutedOrNot}}</el-button>
+            <el-slider v-show="!controlList.noVolume" v-model="volume" :format-tooltip="formatVolumeToolTip" @change="changeVolume" class="slider"></el-slider>
+
+            <a :href="url" v-show="!controlList.noDownload" target="_blank" class="download" download>download</a>
 
         </div>
     </div>
@@ -42,6 +52,7 @@ function realFormatSecond(second) {
 }
 
 export default {
+    name:'VueAudio',
     data() {
         return {
             audio:{

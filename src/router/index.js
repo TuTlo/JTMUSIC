@@ -8,6 +8,7 @@ import Drama from '@/components/Drama.vue'
 import Pv from '@/components/Pv.vue'
 import Song from '@/components/Song.vue'
 import Other from '@/components/Other.vue'
+import Contact from '@/components/Contact.vue'
 
 Vue.use(VueRouter)
 
@@ -20,7 +21,8 @@ const router = new VueRouter({
     {name:'drama',path:'/drama',component:Drama},
     {name:'pv',path:'/pv',component:Pv},
     {name:'song',path:'/song',component:Song},
-    {name:'other',path:'/other',component:Other}
+    {name:'other',path:'/other',component:Other},
+    {name:'contact',path:'/contact',component:Contact},
   ]
 })
 

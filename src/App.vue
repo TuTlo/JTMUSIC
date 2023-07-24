@@ -4,7 +4,7 @@
     <router-view></router-view>
     <page></page>
     <player />
-    <footer></footer>
+    <pagefooter></pagefooter>
   </div>
 </template>
 
@@ -15,7 +15,6 @@ import Music from './components/Music.vue'
 import Song from './components/Song.vue'
 import Other from './components/Other.vue'
 import Footer from './components/Footer.vue'
-
 import Player from './components/Player.vue'
 
 export default {
@@ -27,7 +26,7 @@ export default {
     'music':Music,
     'song':Song,
     'other':Other,
-    'footer':Footer,
+    'pagefooter':Footer,
   },
   data() {
     return {}

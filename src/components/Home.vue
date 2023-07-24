@@ -54,7 +54,8 @@
 						DAWN QI, Composer, Music Producer.
 					</p>
 					<p class="text-center lead">
-						something abcd mstart some year
+						xxx (ID) was born in Guangzhou, China. Graduated from Master of Science, Economics and Master of Sicence, Computer Science, with a Bachelor 
+						Minor in Music. Started learning the piano at her 4, she achieved a second price at HongKong International Invitation Competition. 
 					</p>
 				</div>
 			</div>

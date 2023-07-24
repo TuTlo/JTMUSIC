@@ -16,6 +16,7 @@
                                 <router-link :to="'/pv'" exact>PV</router-link>
                                 <router-link :to="'/song'" exact>SONG</router-link>
                                 <router-link :to="'/other'" exact>OTHER</router-link>
+                                <router-link :to="'/contact'" exact>CONTACT</router-link>
                             </div>
                         </li>
                     </ul>
